@@ -4,7 +4,7 @@ This file records durable constraints for contributors and future implementation
 
 ## Purpose
 
-Build a personal learning and portfolio project that models a fictional registry workflow in two forms: an HTML/JavaScript web prototype and a PowerBuilder Windows desktop application.
+Build a personal learning and portfolio project that models a fictional registry workflow in two forms: a React/Vite web prototype and a PowerBuilder Windows desktop application.
 
 ## Scope
 
@@ -16,7 +16,7 @@ Statuses named so far: **registered**, **transferred**, **lost/stolen**, and **d
 
 - Use fictional, generated sample data only. Never put real owner or firearm data in the repository, screenshots, demo, issues, or logs.
 - This project is a demonstration, not a real registry or an operational policing system.
-- A role selector or permission check in browser JavaScript is not authentication or access control. Any real deployment would require a separately designed, secured server and authorization layer; that is outside the current demo scope.
+- A profile switch, simulated admin preview, or permission check in browser JavaScript is not authentication or access control. Any real deployment would require a separately designed, secured server and authorization layer; that is outside the current demo scope.
 - Do not claim the demo provides production-grade security, legal compliance, or operational readiness.
 
 ## Product direction

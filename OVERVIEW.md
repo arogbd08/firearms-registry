@@ -28,8 +28,8 @@ A personal project exploring how a registry-style application can record fiction
 
 ## Current state
 
-Planning and repository scaffolding. A live web prototype is identified in the root README, but this repository currently has no application source or build instructions.
+The web prototype is implemented in `web-prototype/` as a modular React/Vite app with fictional sample data and browser-local persistence. The PowerBuilder component remains in planning; there is no backend or secure authorization.
 
 ## Immediate next step
 
-Complete [the workflow specification](docs/workflows.md) and [the data model](docs/data-model.md), then record choices and unresolved questions in [decisions.md](docs/decisions.md).
+Review the web demo workflows against [the workflow specification](docs/workflows.md) and [the data model](docs/data-model.md), then settle the open status and ownership rules before starting the PowerBuilder implementation.

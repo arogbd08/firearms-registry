@@ -6,7 +6,7 @@ A personal software project exploring a fictional firearms registry workflow in 
 
 ## Project components
 
-- **Web prototype:** HTML and JavaScript workflow hosted on GitHub Pages: [arogbd08.github.io/firearms](https://arogbd08.github.io/firearms)
+- **Web prototype:** modular React/Vite app in [`web-prototype/`](web-prototype/README.md); hosted demo: [arogbd08.github.io/firearms](https://arogbd08.github.io/firearms)
 - **PowerBuilder application:** planned Windows desktop model of the same workflow.
 - **Documentation:** requirements, data model, decisions, and build notes in `docs/`.
 
@@ -33,11 +33,11 @@ Folders marked planned are scaffolding; application source may live elsewhere un
 
 ## Getting started
 
-There is no local build or install workflow documented yet. Start with [OVERVIEW.md](OVERVIEW.md), then review [CONTEXT.md](CONTEXT.md) and the documents under `docs/`. The web prototype is available at the link above.
+To run the web model locally, follow [`web-prototype/README.md`](web-prototype/README.md). Start with [OVERVIEW.md](OVERVIEW.md), then review [CONTEXT.md](CONTEXT.md) and the documents under `docs/`.
 
 ## Current status
 
-Planning and repository setup. The next milestone is to agree on the workflow, fields, permissions, and audit events before implementing the shared model in either application.
+The web application model is built as a modular React/Vite prototype with fictional data. The PowerBuilder desktop implementation remains in planning.
 
 ## Safety and scope
 

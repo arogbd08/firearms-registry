@@ -1,5 +1,42 @@
-# Web Prototype
+# React web model
 
-Live prototype: [arogbd08.github.io/firearms](https://arogbd08.github.io/firearms)
+Modular React and Vite prototype for a fictional registry workflow. It includes a project landing page, interactive web model, and a PowerBuilder project status page.
 
-This repository does not yet contain the prototype source or a local run/deploy workflow. If source is added here, document how to run and publish it in this file. Keep sample records fictional and clearly label role controls as demonstration behavior, not real access control.
+## Run locally
+
+Use Node.js 20.19+ or 22.12+ ([Vite's current requirement](https://vite.dev/guide/)). In Windows PowerShell, run:
+
+```sh
+npm.cmd install
+npm.cmd run dev
+```
+
+For a production bundle, run `npm.cmd run build`; Vite writes the static site to `dist/`. `npm.cmd run preview` serves that built site locally. The configured Vite base path is `/firearms/` for the repository's GitHub Pages project URL. In other terminals, use `npm` in place of `npm.cmd`.
+
+## Project structure
+
+```text
+src/
+├── components/       # Header, navigation, forms, and record detail
+├── data/             # Fictional demo users and seed records
+├── domain/           # RegistryRecord behavior and AccessPolicy
+├── pages/            # Landing, registry workspace, PowerBuilder showcase
+├── services/         # Browser-local registry repository
+├── App.jsx            # App state and use-case coordination
+├── main.jsx           # React entry point
+└── styles.css         # Responsive visual system
+```
+
+The domain model encapsulates status and transfer behavior. The access policy centralizes illustrative permissions. UI components call the app-level handlers rather than owning record rules.
+
+## Demo behavior and limits
+
+- Search fictional firearm and owner profiles, view record details, link owners, change statuses, transfer ownership, and browse an audit-style event history.
+- `localStorage` keeps edits in this browser. The reset control restores the fictional seed records.
+- The profile switch is a **demo simulation** of role-based permissions and admin preview. It does not represent authenticated user impersonation. All roles and records are selectable locally.
+- This static client does not enforce security: browser state and permissions can be edited or bypassed. It has no real authentication, backend, authoritative audit trail, or operational use.
+- Use fictional data only. Do not enter real owners, firearm identifiers, incident details, or other sensitive information.
+
+## PowerBuilder showcase
+
+The header switches between the web model and the PowerBuilder status page. The desktop project is labeled **In progress**; screenshot space is reserved, and download availability is deferred until a build is packaged and documented.
