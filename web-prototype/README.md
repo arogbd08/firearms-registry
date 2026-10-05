@@ -31,9 +31,10 @@ The domain model encapsulates status and transfer behavior. The access policy ce
 
 ## Demo behavior and limits
 
-- Search fictional firearm and owner profiles, view record details, link owners, change statuses, transfer ownership, and browse an audit-style event history.
+- Search fictional firearm and owner profiles, open full record and owner details, link owners, change statuses, transfer ownership, and browse an audit-style event history.
+- Use the dashboard attention queue to open records marked lost / stolen, and inspect an owner's current linked records and recent events.
 - `localStorage` keeps edits in this browser. The reset control restores the fictional seed records.
-- The profile switch is a **demo simulation** of role-based permissions and admin preview. It does not represent authenticated user impersonation. All roles and records are selectable locally.
+- The header's **Simulate profile** selector switches among fictional officer, admin, and read-only profiles. The active preview is shown in a banner and logged to the local activity list. It does not represent authenticated user impersonation. All profiles are selectable locally.
 - This static client does not enforce security: browser state and permissions can be edited or bypassed. It has no real authentication, backend, authoritative audit trail, or operational use.
 - Use fictional data only. Do not enter real owners, firearm identifiers, incident details, or other sensitive information.
 
